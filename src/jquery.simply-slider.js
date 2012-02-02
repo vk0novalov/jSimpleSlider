@@ -96,12 +96,11 @@
                 i < fringe && i < this.imagesLength;
                 ++i) {
                 
-            if (i && isNoFirst && i % this.options.columns === 0) {
-                code.push('<br />'); // TODO: replace with float & clear !
-            }   
-            
+            var isNewRow = i && isNoFirst && i % this.options.columns === 0;
+            code.push('<div class="image '+ (isNewRow ? 'image-new-row' : '') +'">');
             code.push(this.options.imageTemplater(this.images[i]));
-                
+            code.push('</div>');
+            
             if (!isNoFirst) isNoFirst = true;
         }
         
