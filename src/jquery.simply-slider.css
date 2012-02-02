@@ -1,0 +1,47 @@
+
+.simply-slider {
+
+    position: relative;
+
+}
+
+
+.simply-slider .slider-arrow {
+    width: 15px;
+    height: 100%;
+    float: left;
+    opacity: 0;
+    background-color: transparent;
+    color: #0063DC;
+    text-align: center;
+    
+    font-size: 16px;
+    font-weight: bold;
+    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.simply-slider .slider-arrow:hover {
+    background-color: #0063DC;
+    color: #fff;
+}
+
+.simply-slider:hover .slider-arrow {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.simply-slider .slider-arrow div {
+    margin-top: 40px;
+}
+
+.simply-slider .slider {
+    float: left;
+    min-width: 260px;
+    margin: 0 5px;
+}
+
